@@ -1,5 +1,5 @@
 
-**Trabalho Prático de Algoritmos e estruturas de dados II**
+<h1> Trabalho Prático de Algoritmos e estruturas de dados II <h1>
 
 
     Este trabalho tem como objetivo armazenar dados em um arquivo binário de acordo com uma organização de campos e registros, bem como recuperar os dados armazenados; também é uma de suas funcionalidades realizar operações de inserção, remoção e atualização de dados baseadas na abordagem dinâmica de reaproveitamento de espaços de registros logicamente removidos.
@@ -10,7 +10,7 @@
 #1: ds
 
 
-'''
+**
 typedef struct {
     char status;         // Se o valor for 0, esta incosistente. Se for 1, esta tudo certo
     int topoPilha;       // Pilha
@@ -25,4 +25,4 @@ typedef struct {
     char desCampo4[max]; // Cidade
     char desCampo5[max]; // Nome da escola
 } Cabecalho;
-'''
+**
