@@ -69,6 +69,7 @@ Número de páginas de disco acessadas: 1
 * Exibe o registro solicitado pelo usuário através RRN solicitado.
 * Mostra o número de páginas de disco acessadas.
 
+---
 ***Sintaxe do comando para a funcionalidade [4]:***  
 4 arquivo.bin RRN  
 ***Saída caso o programa seja executado com sucesso:***  
@@ -82,6 +83,7 @@ Falha no processamento do arquivo.
 4 arquivo.bin 1  
 387 9 Sao Paulo 10 JOAO KOPKE  
 Número de páginas de disco acessadas: 1  
+---
 
 ## Structs
 
