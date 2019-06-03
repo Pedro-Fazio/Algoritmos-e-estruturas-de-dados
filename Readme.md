@@ -3,8 +3,13 @@
 
 Este trabalho tem como objetivo armazenar dados em um arquivo binário de acordo com uma organização de campos e registros, bem como recuperar os dados armazenados; também é uma de suas funcionalidades realizar operações de inserção, remoção e atualização de dados baseadas na abordagem dinâmica de reaproveitamento de espaços nos registros logicamente removidos.
 
- 
-## ***Funcionalidades:***
+## Informações sobre o projeto:
+
+- O projeto consiste em fazer modificações com arquivos de dados; trabalhar com conceitos de registros, páginas de disco, campos fixos/variáveis
+- No projeto é utilizado registros de tamanho fixo e campos de tamanho fixos e variáveis.
+- Linguagem utilizada: C
+
+## Funcionalidades:
 
 No projeto foram utilizadas algumas funcionalidades para manipular o arquivo de dados, sendo elas:
 
@@ -98,7 +103,7 @@ nomeCampo2 valorCampo2
 ...  
 nomeCampon valorCampon  
 ***Onde:***  
-- arquivo.bin é um arquivo binário de entrada que segue as mesmas especificações definidas no primeiro trabalho prático. As remoções a serem realizadas nessa funcionalidade devem ser feitas nesse arquivo. - n é o número de remoções a serem realizadas. Para cada remoção, deve ser informado o nome do campo a ser considerado e seu critério de busca representado pelo valor do campo. Cada uma das n remoções deve ser especificada em uma linha diferente. Deve ser deixado um espaço em branco entre o nome do campo e o valor do campo. Os valores dos campos do tipo string devem ser especificados entre aspas
+arquivo.bin é um arquivo binário de entrada que segue as mesmas especificações definidas no primeiro trabalho prático. As remoções a serem realizadas nessa funcionalidade devem ser feitas nesse arquivo. - n é o número de remoções a serem realizadas. Para cada remoção, deve ser informado o nome do campo a ser considerado e seu critério de busca representado pelo valor do campo. Cada uma das n remoções deve ser especificada em uma linha diferente. Deve ser deixado um espaço em branco entre o nome do campo e o valor do campo. Os valores dos campos do tipo string devem ser especificados entre aspas
 duplas (").  
 ***Saída caso o programa seja executado com sucesso:***  
 Listar o arquivo binário arquivo.bin.  
@@ -124,7 +129,7 @@ valorNroInscricao2 valorNota2 valorData2 valorCidade2 valorNomeEscola2
 ...  
 valorNroInscricaon valorNotan valorDatan valorCidaden valorNomeEscolan  
 ***Onde:***  
-- arquivo.bin é um arquivo binário de entrada que segue as mesmas especificações definidas no primeiro trabalho prático. As inserções a serem realizadas nessa funcionalidade devem ser feitas nesse arquivo. - n é o número de inserções a serem realizadas. Para cada inserção, deve ser informado os valores a serem inseridos no arquivo, para os campos especificados na mesma ordem que a definida no primeiro trabalho prático, a saber: nroInscrição, nota, data,cidade, nomeEscola. Não existe truncamento de dados. Valores nulos devem ser identificados, na entrada da funcionalidade, por NULO. Cada uma das n inserções deve ser especificada em uma linha diferente. Deve ser deixado um espaço em branco entre os valores dos campos. Os valores dos campos do tipo string devem ser especificados entre aspas duplas (").  
+arquivo.bin é um arquivo binário de entrada que segue as mesmas especificações definidas no primeiro trabalho prático. As inserções a serem realizadas nessa funcionalidade devem ser feitas nesse arquivo. - n é o número de inserções a serem realizadas. Para cada inserção, deve ser informado os valores a serem inseridos no arquivo, para os campos especificados na mesma ordem que a definida no primeiro trabalho prático, a saber: nroInscrição, nota, data,cidade, nomeEscola. Não existe truncamento de dados. Valores nulos devem ser identificados, na entrada da funcionalidade, por NULO. Cada uma das n inserções deve ser especificada em uma linha diferente. Deve ser deixado um espaço em branco entre os valores dos campos. Os valores dos campos do tipo string devem ser especificados entre aspas duplas (").  
 ***Saída caso o programa seja executado com sucesso:***  
 Listar o arquivo binário arquivo.bin.  
 ***Mensagem de saída caso algum erro seja encontrado:***  
@@ -148,7 +153,7 @@ RRN nomeCampo2 valorCampo2
 ...  
 RRN nomeCampon valorCampon  
 ***Onde:***  
-- arquivo.bin é um arquivo binário de entrada que segue as mesmas especificações definidas no primeiro trabalho prático. As atualizações a serem realizadas nessa funcionalidade devem ser feitas nesse arquivo. - n é o número de atualizações a serem realizadas. Para cada atualização, deve ser
+arquivo.bin é um arquivo binário de entrada que segue as mesmas especificações definidas no primeiro trabalho prático. As atualizações a serem realizadas nessa funcionalidade devem ser feitas nesse arquivo. - n é o número de atualizações a serem realizadas. Para cada atualização, deve ser
 informado o valor do RRN do registro, o campo do registro a ser alterado e o novo valor desse campo. Não existe truncamento de dados. Valores nulos devem ser identificados, na entrada da funcionalidade, por NULO. Cada uma das n atualizações deve ser especificada em uma linha diferente. Deve ser deixado um espaço em branco entre o RRN e o nome do campo, e entre o nome do campo e o valor do campo. Os valores dos campos do tipo string devem ser especificados entre aspas duplas (").  
 ***Saída caso o programa seja executado com sucesso:***  
 Listar o arquivo binário arquivo.bin.  
