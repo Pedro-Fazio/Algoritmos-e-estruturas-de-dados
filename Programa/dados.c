@@ -1,4 +1,4 @@
-#include "trab.h"
+#include "dados.h"
 // Definicoes
 #define tamPagDisco 16000
 #define tamRegistroCab 285

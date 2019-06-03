@@ -1,6 +1,6 @@
 // Nome: Pedro Afonso Fazio Michalichem
 // N USP: 10734196
-#include "trab.h"
+#include "dados.h"
 
 int main() {
     char nome_arquivo[100], nome_campo[100], valor[100], status;
