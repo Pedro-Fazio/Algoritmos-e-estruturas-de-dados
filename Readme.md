@@ -69,7 +69,6 @@ Número de páginas de disco acessadas: 1
 * Exibe o registro solicitado pelo usuário através RRN solicitado.
 * Mostra o número de páginas de disco acessadas.
 
----
 ***Sintaxe do comando para a funcionalidade [4]:***  
 4 arquivo.bin RRN  
 ***Saída caso o programa seja executado com sucesso:***  
@@ -83,7 +82,83 @@ Falha no processamento do arquivo.
 4 arquivo.bin 1  
 387 9 Sao Paulo 10 JOAO KOPKE  
 Número de páginas de disco acessadas: 1  
----
+
+**Função 5:**
+* Permite a remoção lógica de registros baseado na abordagem dinâmica de reaproveitamento de espaços.
+* Implementação fora realizada utilizando o conceito de **pilha**
+* A **remoção** é realizada seguindo o critério de busca determinado pelo usuário, utilizando-se dos campos como forma de busca, como por exemplo: *número de inscrição; data; nota; nome da escola ou cidade.*
+* Todos os registros logicamente removidos serão preenchidos com **lixo**.
+* Essa funcionalidade será executada **n** vezes, que será um número determinado pelo próprio usuário.
+* Escreve na tela todo o arquivo de dados utilizando-se do **sistema numérico hexadecimal**.
+
+***Entrada do programa para a funcionalidade [5]:***  
+5 arquivo.bin n  
+nomeCampo1 valorCampo1  
+nomeCampo2 valorCampo2  
+...  
+nomeCampon valorCampon  
+***Onde:***  
+- arquivo.bin é um arquivo binário de entrada que segue as mesmas especificações definidas no primeiro trabalho prático. As remoções a serem realizadas nessa funcionalidade devem ser feitas nesse arquivo. - n é o número de remoções a serem realizadas. Para cada remoção, deve ser informado o nome do campo a ser considerado e seu critério de busca representado pelo valor do campo. Cada uma das n remoções deve ser especificada em uma linha diferente. Deve ser deixado um espaço em branco entre o nome do campo e o valor do campo. Os valores dos campos do tipo string devem ser especificados entre aspas
+duplas (").  
+***Saída caso o programa seja executado com sucesso:***  
+Listar o arquivo binário arquivo.bin.  
+***Mensagem de saída caso algum erro seja encontrado:***  
+Falha no processamento do arquivo.  
+***Exemplo de execução:***  
+./programaTrab2  
+5 arquivo.bin 2  
+nroInscricao 546  
+data "14/01/2004"  
+
+**Função 6:**
+* Permite a **inserção** de registros adicionais baseado na abordagem dinâmica de reaproveito de espaços.
+* Implementação fora realizada utilizando o conceito de **pilha**.
+* Caso haja reaproveitamento de um registro marcado logicamente como removido, esse registro será sobrescrito completamente.
+* Essa funcionalidade será executada **n** vezes, que será um número determinado pelo próprio usuário.
+* Escreve na tela todo o arquivo de dados utilizando-se do **sistema numérico hexadecimal**.
+
+***Entrada do programa para a funcionalidade [6]:***  
+6 arquivo.bin n  
+valorNroInscricao1 valorNota1 valorData1 valorCidade1 valorNomeEscola1  
+valorNroInscricao2 valorNota2 valorData2 valorCidade2 valorNomeEscola2  
+...  
+valorNroInscricaon valorNotan valorDatan valorCidaden valorNomeEscolan  
+***Onde:***  
+- arquivo.bin é um arquivo binário de entrada que segue as mesmas especificações definidas no primeiro trabalho prático. As inserções a serem realizadas nessa funcionalidade devem ser feitas nesse arquivo. - n é o número de inserções a serem realizadas. Para cada inserção, deve ser informado os valores a serem inseridos no arquivo, para os campos especificados na mesma ordem que a definida no primeiro trabalho prático, a saber: nroInscrição, nota, data,cidade, nomeEscola. Não existe truncamento de dados. Valores nulos devem ser identificados, na entrada da funcionalidade, por NULO. Cada uma das n inserções deve ser especificada em uma linha diferente. Deve ser deixado um espaço em branco entre os valores dos campos. Os valores dos campos do tipo string devem ser especificados entre aspas duplas (").  
+***Saída caso o programa seja executado com sucesso:***  
+Listar o arquivo binário arquivo.bin.  
+***Mensagem de saída caso algum erro seja encontrado:***  
+Falha no processamento do arquivo.  
+***Exemplo de execução:***  
+./programaTrab2  
+6 arquivo.bin 2  
+1234 109.98 NULO NULO "ESCOLA DE ESTUDO PRIMÁRIO"  
+2132 408.02 "01/08/2016" "CAMPINAS" NULO  
+
+**Função 7**
+* Permite a atualização de um campo específico de um registro identificado por seu RRN.
+* O que sobrou do registro após a atualização será preenchido com **lixo**.
+* Essa funcionalidade será executada **n** vezes, que será um número determinado pelo próprio usuário.
+* Escreve na tela todo o arquivo de dados utilizando-se do **sistema número hexadecimal**.
+
+***Entrada do programa para a funcionalidade [7]:***  
+7 arquivo.bin n  
+RRN nomeCampo1 valorCampo1  
+RRN nomeCampo2 valorCampo2  
+...  
+RRN nomeCampon valorCampon  
+***Onde:***  
+- arquivo.bin é um arquivo binário de entrada que segue as mesmas especificações definidas no primeiro trabalho prático. As atualizações a serem realizadas nessa funcionalidade devem ser feitas nesse arquivo. - n é o número de atualizações a serem realizadas. Para cada atualização, deve ser
+informado o valor do RRN do registro, o campo do registro a ser alterado e o novo valor desse campo. Não existe truncamento de dados. Valores nulos devem ser identificados, na entrada da funcionalidade, por NULO. Cada uma das n atualizações deve ser especificada em uma linha diferente. Deve ser deixado um espaço em branco entre o RRN e o nome do campo, e entre o nome do campo e o valor do campo. Os valores dos campos do tipo string devem ser especificados entre aspas duplas (").  
+***Saída caso o programa seja executado com sucesso:***  
+Listar o arquivo binário arquivo.bin.  
+***Mensagem de saída caso algum erro seja encontrado:***  
+Falha no processamento do arquivo.  
+***Exemplo de execução:***  
+./programaTrab2  
+7 arquivo.bin 2  
+1 nomeEscola "ESCOLA DE ENSINO"  
+5 data "07/07/2007"  
 
 ## Structs
 
