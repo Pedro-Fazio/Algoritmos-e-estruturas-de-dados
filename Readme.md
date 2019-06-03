@@ -32,7 +32,7 @@ arquivoTrab1si.bin
 ***Entrada do programa para a funcionalidade [2]:***    
 2 arquivo.bin //arquivo binário gerado na funcionalidade [1]  
 ***Saída caso o programa seja executado com sucesso:***  
-Cada registro deve ser mostrado em uma única linha e os seus campos devem ser mostrados de forma sequencial separado por espaço. Campos de tamanho fixo que tiverem o valor nulo não devem mostrados. Para os campos com tamanho variável, mostre também sua quantidade de caracteres (tamanhos em bytes sem o caractere '\0'). Para os campos de tamanho variável com valores nulos, não deve ser exibido nada. Ao final, deve ser exibido o número de páginas de disco acessadas. 
+Cada registro deve ser mostrado em uma única linha e os seus campos devem ser mostrados de forma sequencial separado por espaço. Campos de tamanho fixo que tiverem o valor nulo não devem mostrados. Para os campos com tamanho variável, mostre também sua quantidade de caracteres (tamanhos em bytes sem o caractere '\0'). Para os campos de tamanho variável com valores nulos, não deve ser exibido nada. Ao final, deve ser exibido o número de páginas de disco acessadas.  
 ***Mensagem de saída caso não existam registros:***    
 Registro inexistente.  
 ***Mensagem de saída caso algum erro seja encontrado:***    
@@ -43,6 +43,45 @@ Falha no processamento do arquivo.
 439 607.5 01/01/2004 6 Maceio 8 PEDRO II  
 387 9 Sao Paulo 10 JOAO KOPKE  
 Número de páginas de disco acessadas: 25  
+
+**Função 3:**
+* Permite a recuperação de todos os registros que satisfaçam um critério de busca determinado pelo usuário.
+* O critério de busca é determinado pelo nome do campo, como por exemplo: *número de inscrição; data; nota; nome da escola ou cidade.*
+* Exibe os registros com o critério escolhido pelo usuário.
+* Mostra o número de página de disco acessadas.
+
+***Sintaxe do comando para a funcionalidade [3]:***  
+3 arquivo.bin NomeDoCampo valor  
+***Saída caso o programa seja executado com sucesso:***  
+Podem ser encontrados vários registros que satisfaçam à condição de busca. Cada registro deve ser mostrado em uma única linha e os seus campos devem ser mostrados de forma sequencial separado por espaço. Campos de tamanho fixo que tiverem o valor nulo não devem mostrados. Para os campos com tamanho variável, mostre também seu mostre também sua quantidade de caracteres (tamanhos em bytes sem o caractere '\0'). Para os campos de tamanho variável com valores nulos, não deve ser exibido nada. Ao final, deve ser exibido o número de páginas de disco acessadas.  
+***Mensagem de saída caso não seja encontrado o registro que contém o valor do campo ou o campo pertence a um registro que esteja removido:***  
+Registro inexistente.  
+***Mensagem de saída caso algum erro seja encontrado:***  
+Falha no processamento do arquivo.  
+Exemplo de execução (é mostrado apenas o primeiro registro que satisfez à busca, embora a funcionalidade provida pelo programa deva exibir mais do que um registro quando for o caso):  
+./programaTrab1  
+3 nroInscricao 332  
+332 400.8 03/01/2004 8 Brasilia 29 REINALDO RIBEIRO DA SILVA DOU  
+Número de páginas de disco acessadas: 1  
+
+**Função 4:**
+* Permite a recuperação de dados de um registro a partir da identificação do RRN (número relativo do registro).
+* Exibe o registro solicitado pelo usuário através RRN solicitado.
+* Mostra o número de páginas de disco acessadas.
+
+***Sintaxe do comando para a funcionalidade [4]:***  
+4 arquivo.bin RRN  
+***Saída caso o programa seja executado com sucesso:***  
+Será recuperado, no máximo, 1 registro. O registro deve ser mostrado em uma única linha e os seus campos devem ser mostrados de forma sequencial separado por espaço. Campos de tamanho fixo que tiverem o valor nulo não devem mostrados. Para os campos com tamanho variável, mostre também seu mostre também sua quantidade de caracteres (tamanhos em bytes sem o caractere '\0'). Para os campos de tamanho variável com valores nulos, não deve ser exibido nada. Ao final, deve ser exibido o número de páginas de disco acessadas.  
+***Mensagem de saída caso não seja encontrado o registro ou o registro esteja removido:***  
+Registro inexistente.  
+***Mensagem de saída caso algum erro seja encontrado:***  
+Falha no processamento do arquivo.  
+***Exemplo de execução:***  
+./programaTrab1  
+4 arquivo.bin 1  
+387 9 Sao Paulo 10 JOAO KOPKE  
+Número de páginas de disco acessadas: 1  
 
 ## Structs
 
