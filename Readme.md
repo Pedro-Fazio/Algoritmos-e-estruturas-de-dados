@@ -14,6 +14,7 @@ Este trabalho tem como objetivo armazenar dados em um arquivo binário de acordo
 ## Registro de cabeçalho
 
 O registro de cabeçalho ocupa uma pagina de disco completa (16000 bytes) e contêm os seguintes campos:  
+
 • **status:** indica a consistência do arquivo de dados, devido à queda de energia, travamento do programa, etc. Pode assumir os valores 0, para indicar que o arquivo de dados está inconsistente, ou 1, para indicar que o arquivo de dados está consistente. Ao se abrir um arquivo para escrita, seu status deve ser 0 e, ao finalizar o uso desse arquivo, seu status deve ser 1 – tamanho: string de 1 byte.  
 • **topoPilha:** armazena o RRN de um registro logicamente removido, ou -1 caso não haja registros logicamente removidos – tamanho: inteiro de 4 bytes.  
 • **tagCampo1:** valor resumido da tag para o campo nroInscricao. Deve assumir o valor 1 – tamanho: string de 1 byte.  
@@ -34,6 +35,7 @@ O tamanho do registro de cabeçalho deve ser de 285 bytes, representado da segui
 ## Registros de Dados. 
 
 Cada registro do arquivo de dados contém dados relacionados aos participantes do ENEM. Esses dados foram gerados usando dados reais obtidos do ENEM e também dados sintéticos. Cada registro representa um participante do ENEM e contém os seguintes campos:  
+
 • **Campos de tamanho fixo: 22 bytes**
 • nroInscricao – inteiro – tamanho: 4 bytes
 • nota – número de dupla precisão – tamanho: 8 bytes
