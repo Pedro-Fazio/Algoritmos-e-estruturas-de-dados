@@ -1,3 +1,14 @@
+# Introdução
+
+Esse repositório conta com dois projetos que foram desenvolvidos para Algoritmos e estruturas de dados I e II.
+
+# Trabalho Prático de Algoritmos e estruturas de dados I - Pilha
+
+Este trabalho tem como objetivo aplicar os conhecimentos sobre pilha, desta forma será implementado uma pilha capaz de fazer tais manipulações com os dados
+
+- Inserção
+- Remoção
+- Verificação
 
 # Trabalho Prático de Algoritmos e estruturas de dados II - Participantes do ENEM
 
@@ -244,3 +255,7 @@ Essa struct apresenta diversas funcionalidades para o algoritmo, porém sua prin
         int contSchool;
 
 } Registro;
+
+# Conclusão
+
+Com esse projeto foi possível aprender diversas técnicas muito importantes para o desenvolvimento de códigos em C se utilizando das principais estruturas de dados.
