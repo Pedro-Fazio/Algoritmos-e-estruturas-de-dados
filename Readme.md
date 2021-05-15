@@ -258,4 +258,4 @@ Essa struct apresenta diversas funcionalidades para o algoritmo, porém sua prin
 
 # Conclusão
 
-Com esse projeto foi possível aprender diversas técnicas muito importantes para o desenvolvimento de códigos em C se utilizando das principais estruturas de dados.
+Com esse projeto foi possível aprender diversas técnicas muito importantes para o desenvolvimento de códigos na linguagem C se utilizando das principais estruturas de dados.
