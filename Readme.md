@@ -86,7 +86,7 @@ typedef struct {
 
 **Record Struct:**
 Used to temporarily hold deserialized data in RAM before writing it back to the disk.
-
+```c
 typedef struct {
     char removido;       // '*' if deleted, '-' if active
     int encadeamento;    // Next deleted RRN in the stack
@@ -98,6 +98,7 @@ typedef struct {
     int contCity;
     int contSchool;
 } Registro;
+```
 
 ## Conclusion
 This project provided deep, hands-on experience with core C programming concepts, including pointer manipulation, memory allocation, binary serialization, and low-level disk I/O optimization using custom data structures.
